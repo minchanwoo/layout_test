@@ -1,7 +1,7 @@
 import styles from './index.module.css';
 
 const Index = ({children}) => {
-  return <>
+  return <div className={styles.wrapper}>
     <header>
         <div className={styles.first}>
             <div className={styles.first_line}>
@@ -23,10 +23,15 @@ const Index = ({children}) => {
             </div>
         </div>
     </header>
-    <div className={styles.section}>
-        {children}
-    </div>
-  </>
+    <main>
+        <div className={styles.section}>
+            {children}
+        </div>
+    </main>
+    <footer className={styles.footer}>
+        footer
+    </footer>
+  </div>
 }
 
 export default Index;
