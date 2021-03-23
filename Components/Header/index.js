@@ -17,7 +17,10 @@ const Index = ({children}) => {
             </div>
         </div>
         <div className={styles.second}>
-            SECOND
+            <div>
+                <div className={styles.second_one}>SECOND</div>
+                <div className={styles.second_two}>THIRD</div>
+            </div>
         </div>
     </header>
     <div className={styles.section}>
